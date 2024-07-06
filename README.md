@@ -36,6 +36,10 @@ To execute the unit tests, run:
 mvn test
 ```
 
+### UML
+![UML](https://raw.githubusercontent.com/besafx/retail/master/UML.png)
+
+
 ### Run static code analysis
 You can run the Checkstyle analysis with the following Maven command:
 ```bash
@@ -60,4 +64,6 @@ mvn clean verify sonar:sonar \
   -Dsonar.host.url=http://localhost:9000 \
   -Dsonar.token=squ_2e1dcd886a6f6ce68133f7d11e0b12fa39dea366
 ```
-Check screenshot in root folder with name "SonarCubeResult.png" to preview the result.
+
+### SonarQube Result
+![SonarCubeResult](https://raw.githubusercontent.com/besafx/retail/master/SonarCubeResult.png)
