@@ -13,7 +13,7 @@ This is a Spring Boot application that calculates the net price on a retail bill
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/your-username/retail-discount-calculator.git
+git clone https://github.com/besafx/retail.git
 cd retail-discount-calculator
 ```
 
