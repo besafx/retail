@@ -67,3 +67,10 @@ mvn clean verify sonar:sonar \
 
 ### SonarQube Result
 ![SonarCubeResult](https://raw.githubusercontent.com/besafx/retail/master/SonarCubeResult.png)
+
+### Bonus points
+I created a new feature branch, 'feature/use_discount_policies,' to add enhancements and improvements for code quality, as well as to handle another discount rule for customers who have bills older than 2 years. I then merged it into the master branch.
+
+Here is final report for SonarQube after merging
+![Final_1](https://raw.githubusercontent.com/besafx/retail/master/Final_1.png)
+![Final_2](https://raw.githubusercontent.com/besafx/retail/master/Final_2.png)
