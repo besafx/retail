@@ -2,6 +2,8 @@ package com.retial.app.domain.service;
 
 import com.retial.app.domain.entity.Bill;
 import com.retial.app.domain.entity.User;
+import org.joda.time.DateTime;
+import org.joda.time.Years;
 import org.springframework.stereotype.Service;
 
 import java.util.Objects;
@@ -39,7 +41,8 @@ public class BillService {
             // If the user is an affiliate of the store, he gets a 10% discount
             case AFFILIATE -> percentageDiscount = 0.10;
             // If the user has been a customer for over 2 years, he gets a 5% discount.
-            case CUSTOMER -> percentageDiscount = 0.05;
+            case CUSTOMER -> percentageDiscount =
+                    Years.yearsBetween(new DateTime(user.getStartDate()), DateTime.now()).getYears() > 2 ? 0.05 : 0.0;
         }
         return percentageDiscount;
     }
